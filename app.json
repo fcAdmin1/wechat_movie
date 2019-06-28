@@ -3,13 +3,34 @@
     "pages/index/index",
     "pages/welcome/index",
     "pages/logs/logs",
-    "pages/flex/flex"
+    "pages/flex/flex",
+    "pages/movie/movie"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "color": "#D2D2D2",
+    "selectedColor": "#0491FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "资讯",
+        "iconPath": "images/tab/news_icon.png",
+        "selectedIconPath": "images/tab/news_icon_selected.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/tab/film_icon.png",
+        "selectedIconPath": "images/tab/film_icon_selected.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
