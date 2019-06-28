@@ -1,17 +1,19 @@
 //app.js
 App({
   onLaunch: function () {
-    console.log('sdfsdfsf')
-    console.log(this.config)
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    console.log('sdfsdfsf');
+    // 生命周期回调——监听小程序初始化。
+  },
+  onShow() {
+    // 生命周期回调——监听小程序启动或切前台。
+  },
+  onHide() {
+    // 生命周期回调——监听小程序切后台。
+  },
+  onError() {
+    // 小程序发生脚本错误或 API 调用报错时触发
   },
   globalData: {
     userInfo: null
   },
-  config: {
-    sys: '23094803840'
-  }
 })
