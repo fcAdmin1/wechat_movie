@@ -14,6 +14,12 @@ Page({
       '/images/banner/banner.png',
       '/images/banner/banner.png'
     ],
+    test: {
+      name: 'james',
+      info: {
+        phone: '19089786756'
+      }
+    }
   },
   swiperChange() {
     // console.log(111);
@@ -58,6 +64,16 @@ Page({
    */
   onPullDownRefresh() {
     console.log('监听用户下拉动作');
+    const item = 
+    this.setData({
+      ['test.name']: '是的',
+    })
+    this.setData({
+      ['imgUrls[0]']: 'https://s2.ax1x.com/2019/06/26/ZekLTS.png',
+    })
+    this.setData({
+      ['test.info.phone']: '18373144744'
+    })
   },
 
   /**
