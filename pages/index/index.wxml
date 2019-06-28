@@ -14,4 +14,81 @@
       </swiper-item>
     </block>
   </swiper>
+  <view class="list">
+    <view class="item">
+      <view class="title cc">
+        <text class="title-text">冷艳酷炫！吕克贝松新片曝角色海报超模杀手锁定目标 《安娜》酷劲不输尼基塔</text>
+        <view class="article-info">
+          <view class="author">
+            <image class="avatar" src="/images/avatar/1.png"></image>
+            <text>会飞的鱼</text>
+          </view>
+          <view class="views">
+            <view>
+              <image src="/images/icon/view.png"></image>
+              <text>234</text>
+            </view>
+            <view>
+              <image src="/images/icon/star.png"></image>
+              <text>234</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <image class="ads" mode="aspectFill" src="/images/banner/banner.png"></image>
+      <view class="cc content">
+        时光网讯 前作《星际特工》扑街巨亏之后，吕克·贝松带着他的导演新片《安娜》重返好莱坞。影片近日曝光了角色海报，杀手的狙击镜分别锁定萨莎·露丝、卢克·伊万斯、海伦·米伦与希里安·墨菲四位主角。 
+      </view>
+    </view>
+    <view class="item">
+      <view class="title cc">
+        <text class="title-text">冷艳酷炫！吕克贝松新片曝角色海报超模杀手锁定目标 《安娜》酷劲不输尼基塔</text>
+        <view class="article-info">
+          <view class="author">
+            <image class="avatar" src="/images/avatar/1.png"></image>
+            <text>会飞的鱼</text>
+          </view>
+          <view class="views">
+            <view>
+              <image src="/images/icon/view.png"></image>
+              <text>234</text>
+            </view>
+            <view>
+              <image src="/images/icon/star.png"></image>
+              <text>234</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <image class="ads" mode="aspectFill" src="/images/banner/banner.png"></image>
+      <view class="cc content">
+        时光网讯 前作《星际特工》扑街巨亏之后，吕克·贝松带着他的导演新片《安娜》重返好莱坞。影片近日曝光了角色海报，杀手的狙击镜分别锁定萨莎·露丝、卢克·伊万斯、海伦·米伦与希里安·墨菲四位主角。 
+      </view>
+    </view>
+    <view class="item">
+      <view class="title cc">
+        <text class="title-text">冷艳酷炫！吕克贝松新片曝角色海报超模杀手锁定目标 《安娜》酷劲不输尼基塔</text>
+        <view class="article-info">
+          <view class="author">
+            <image class="avatar" src="/images/avatar/1.png"></image>
+            <text>会飞的鱼</text>
+          </view>
+          <view class="views">
+            <view>
+              <image src="/images/icon/view.png"></image>
+              <text>234</text>
+            </view>
+            <view>
+              <image src="/images/icon/star.png"></image>
+              <text>234</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <image class="ads" mode="aspectFill" src="/images/banner/banner.png"></image>
+      <view class="cc content">
+        时光网讯 前作《星际特工》扑街巨亏之后，吕克·贝松带着他的导演新片《安娜》重返好莱坞。影片近日曝光了角色海报，杀手的狙击镜分别锁定萨莎·露丝、卢克·伊万斯、海伦·米伦与希里安·墨菲四位主角。 
+      </view>
+    </view>
+  </view>
 </view>

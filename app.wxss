@@ -3,7 +3,9 @@ text {
   font-size: 24rpx;
   color: #666;
 }
-
+view {
+  font-size: 24rpx;
+}
 input {
   font-family: MicroSoft YaHei;
 }

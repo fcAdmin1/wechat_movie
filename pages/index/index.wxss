@@ -1,3 +1,7 @@
+page {
+  background: #EDEDED;
+}
+
 
 .container {
   width: 100vw;
@@ -9,4 +13,54 @@
 .slide-image {
   height: 360rpx;
   width: 100%;
+}
+
+.item {
+  background: white;
+  margin-top: 20rpx;
+  padding: 18rpx 0px;
+}
+.article-info {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-info .author {
+  display: flex;
+  align-items: center;
+}
+.article-info .author .avatar {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.article-info .views {
+  display: flex;
+  
+}
+.article-info .views image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5rpx;
+}
+.article-info .views view {
+  margin-right: 10rpx;
+  display: flex;
+}
+.article-info .views view text {
+  color: #CACACA;
+}
+
+.list .ads {
+  margin-top: 10rpx;
+  width: 100%;
+  height: 244rpx;
+}
+.list .title-text {
+  font-size: 28rpx;
+}
+
+.content {
+  color: #2A2A2A;
 }
