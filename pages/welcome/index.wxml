@@ -1,6 +1,8 @@
 <view class="container">
   <image class="back" src="/images/background/back.jpg"></image>
-  <open-data class="avatar" type="userAvatarUrl"></open-data>
+  <view class="avatar">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
   <view class="motto">
     欢迎
     <open-data class="motto" type="userNickName" lang="zh_CN"></open-data>

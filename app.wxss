@@ -8,3 +8,17 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+text {
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+}
+
+input {
+  font-family: MicroSoft YaHei;
+}
+.cc {
+  width: 94%;
+  margin: 0 auto;
+}
