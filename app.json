@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/welcome/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/flex/flex"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,16 @@
+/* pages/flex/flex.wxss */
+
+.box {
+  width: 100%;
+  height: 100vh;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-self: center; */
+}
+.item {
+  width: 200rpx;
+  height: 200rpx;
+  background: white;
+}
