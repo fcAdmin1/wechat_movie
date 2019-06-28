@@ -1,12 +1,17 @@
 <view class="container">
-  <image class="back" src="/images/background/back.jpg"></image>
-  <open-data class="avatar" type="userAvatarUrl"></open-data>
-  <view class="motto">
-    欢迎
-    <open-data class="motto" type="userNickName" lang="zh_CN"></open-data>
-    到来
-  </view>
-  <view class="journey-container" bindtap="onTap">
-      <text class="journey">开启小程序之旅</text>
-  </view>
+  <swiper
+    indicator-dots="{{swiperConfig.indicatorDots}}"
+    indicator-color="{{swiperConfig.indicatorColor}}"
+    indicator-active-color="swiperConfig.indicatorActiveColor"
+    autoplay="{{swiperConfig.autoplay}}"
+    interval="{{swiperConfig.interval}}"
+    circular="{{swiperConfig.circular}}"
+    duration="{{swiperConfig.duration}}"
+    bindchange="swiperChange">
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item class="slide">
+        <image src="{{item}}" mode="aspectFill" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
 </view>
