@@ -25,6 +25,9 @@ Page({
    */
   onLoad(options) {
     const newsItem = news.find(item => item.id == options.id);
+    wx.setNavigationBarTitle({
+      title: newsItem.title,
+    })
     this.setData({
       news: newsItem,
     })
