@@ -1,2 +1,22 @@
-<!--pages/index/news/index.wxml-->
-<text>pages/index/news/index.wxml</text>
+<view class="container">
+  <text class="date">{{news.dateTime}}</text>
+  <text class="title">{{news.title}}</text>
+  <view class="author-date">
+    <view class="user-info">
+      <image class="avatar" src="{{news.avatar}}"></image>
+      <view class="text">
+        <text class="author">{{news.author}}</text>
+        <text class="desc">{{news.userInfo}}</text>
+      </view>
+    </view>
+    <view class="control">
+      <image wx:if="{{!news.collected}}" bindtap="onColletionTap" src="/images/icon/star.png"></image>
+      <image wx:else bindtap="onColletionTap" src="/images/icon/star_selected.png"></image>
+      <button open-type="share" class="share">
+        <image src="/images/icon/share_new.png"></image>
+      </button>
+    </view>
+  </view>
+  <video class="video" src="{{news.videoSource}}"></video>
+  <text class="detail">{{news.detail}}</text>
+</view>
