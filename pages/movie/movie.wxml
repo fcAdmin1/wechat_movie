@@ -33,7 +33,7 @@
       <view class="more"><text>全部{{filmTop.total}}</text> <image src="../../images/icon/right-arrow.png"></image> </view>
     </view>
     <view class="movie-list-top cc">
-      <view class="item" wx:for="{{filmTop.list}}">
+      <view class="item" wx:for="{{filmTop.list}}" wx:key="id">
         <text class="index">{{index + 1}}</text>
         <image src="{{item.coverageUrl}}" mode="aspectFill"></image>
         <view class="info">
