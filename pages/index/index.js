@@ -107,7 +107,9 @@ Page({
       ['test.info.phone']: '18373144744'
     })
   },
-
+  toDetail(e) {
+    console.log(e)
+  },
   /**
    * 页面上拉触底事件的处理函数
    */

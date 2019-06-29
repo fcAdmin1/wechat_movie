@@ -15,7 +15,7 @@
     </block>
   </swiper>
   <view class="list">
-    <view class="item" wx:for="{{articleList}}" wx:key="id">
+    <view class="item" wx:for="{{articleList}}" wx:key="id" data-id="{{item.id}}" bindtap="toDetail">
       <view class="title cc">
         <text class="title-text">{{item.title}}</text>
         <view class="article-info">
