@@ -108,6 +108,11 @@ Page({
     })
   },
   toDetail(e) {
+    const { id } = e.currentTarget.dataset;
+    console.log(e);
+    wx.navigateTo({
+      url: 'news/index?id=' + id,
+    })
     console.log(e)
   },
   /**
