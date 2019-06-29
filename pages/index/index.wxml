@@ -17,20 +17,20 @@
   <view class="list">
     <view class="item">
       <view class="title cc">
-        <text class="title-text">冷艳酷炫！吕克贝松新片曝角色海报超模杀手锁定目标 《安娜》酷劲不输尼基塔</text>
+        <text class="title-text">{{item.title}}</text>
         <view class="article-info">
           <view class="author">
-            <image class="avatar" src="/images/avatar/1.png"></image>
+            <image class="avatar" src="{{item.authorAvatar}}"></image>
             <text>会飞的鱼</text>
           </view>
           <view class="views">
             <view>
               <image src="/images/icon/view.png"></image>
-              <text>234</text>
+              <text>{{item.reading}}</text>
             </view>
             <view>
               <image src="/images/icon/star.png"></image>
-              <text>234</text>
+              <text>{{item.collection}}</text>
             </view>
           </view>
         </view>

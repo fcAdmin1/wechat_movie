@@ -14,6 +14,17 @@ Page({
       '/images/banner/banner.png',
       '/images/banner/banner.png'
     ],
+    item: {
+      title: '这是一个标题',
+      authorAvatar: '/images/avatar/1.png',
+      reading: 123,
+      collection: 3345345,
+    },
+    articleList: [
+      {
+        
+      }
+    ],
     test: {
       name: 'james',
       info: {
@@ -50,7 +61,6 @@ Page({
   onHide() {
     console.log('生命周期函数--监听页面隐藏');
   },
-
   /**
    * 生命周期函数--监听页面卸载
    */
