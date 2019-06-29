@@ -2,28 +2,13 @@
   <view class="pannel">
     <view class="title cc">
       <view class="head">热门预告片</view>
-      <view class="more"><text>全部101</text> <image src="../../images/icon/right-arrow.png"></image> </view>
+      <view class="more"><text>全部{{theaters.total}}</text> <image src="../../images/icon/right-arrow.png"></image> </view>
     </view>
     <view class="movie-list">
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
+      <view class="item" wx:for="{{theaters.list}}" wx:key="movieId">
+        <image src="{{item.coverageUrl}}" mode="aspectFill"></image>
+        <view class="title">{{item.title}}</view>
+        <star prop-star="{{item.stars}}"></star>
       </view>
     </view>
   </view>
