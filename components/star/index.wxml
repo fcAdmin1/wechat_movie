@@ -1,0 +1,10 @@
+
+<view class="stars-container">
+  <view class="stars">
+    <block wx:for="{{propStar.stars}}" wx:key="item">
+      <image class="img" wx:if="{{item}}" src="/images/icon/star_light.png"></image>
+      <image class="img" wx:else src="/images/icon/star_gray.png"></image>
+    </block>
+  </view>
+  <text class="star-score">{{propStar.score}}</text>
+</view>

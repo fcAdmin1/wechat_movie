@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "电影资讯",
-  "usingComponents": {}
+  "usingComponents": {
+    "star": "/components/star/index"
+  }
 }

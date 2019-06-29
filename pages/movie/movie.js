@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    star: {
+      score: 90,
+      stars: [ true, true, false, false, false],
+    }
   },
 
   /**

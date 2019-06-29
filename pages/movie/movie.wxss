@@ -3,6 +3,7 @@
 }
 .pannel {
   margin-top: 20rpx;
+  margin-bottom: 40rpx;
 }
 .pannel .head {
   font-size: 36rpx;
@@ -23,6 +24,10 @@
 .pannel .title {
   display: flex;
   justify-content: space-between;
+}
+.movie-list {
+  clear: both;
+  overflow: auto;
 }
 .movie-list .item {
   margin-top: 20rpx;
@@ -56,4 +61,40 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
+}
+
+.movie-list-top {
+  margin-top: 20rpx;
+}
+.movie-list-top .item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.movie-list-top .item .index{
+  font-size: 30rpx;
+  width: 30rpx;
+}
+.movie-list-top .item image {
+  width: 52rpx;
+  height: 86rpx;
+}
+
+.movie-list-top .item .info {
+  margin-left: 20rpx;
+  flex: 1;
+  border-bottom: 2rpx solid #D8D8D8;
+}
+
+.movie-list-top .item .info .comment {
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.movie-list-top .item .info .comment text {
+  margin-left: 30rpx;
+  color: #D8D8D8;
+}
+.star-box {
+  width: 70%;
+  margin-right: 20rpx;
 }

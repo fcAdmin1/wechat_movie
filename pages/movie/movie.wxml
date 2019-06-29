@@ -8,18 +8,50 @@
       <view class="item">
         <image src="../../images/background/back.jpg"></image>
         <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
       </view>
       <view class="item">
         <image src="../../images/background/back.jpg"></image>
         <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
       </view>
       <view class="item">
         <image src="../../images/background/back.jpg"></image>
         <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
       </view>
       <view class="item">
         <image src="../../images/background/back.jpg"></image>
         <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
+      </view>
+    </view>
+  </view>
+  <view class="pannel">
+    <view class="title cc">
+      <view class="head">热门预告片</view>
+      <view class="more"><text>全部101</text> <image src="../../images/icon/right-arrow.png"></image> </view>
+    </view>
+    <view class="movie-list">
+      <view class="item">
+        <image src="../../images/background/back.jpg"></image>
+        <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
+      </view>
+      <view class="item">
+        <image src="../../images/background/back.jpg"></image>
+        <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
+      </view>
+      <view class="item">
+        <image src="../../images/background/back.jpg"></image>
+        <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
+      </view>
+      <view class="item">
+        <image src="../../images/background/back.jpg"></image>
+        <view class="title">水电费水电费</view>
+        <star prop-star="{{star}}"></star>
       </view>
     </view>
   </view>
@@ -49,25 +81,53 @@
   </view>
   <view class="pannel">
     <view class="title cc">
-      <view class="head">热门预告片</view>
+      <view class="head">Top250</view>
       <view class="more"><text>全部101</text> <image src="../../images/icon/right-arrow.png"></image> </view>
     </view>
-    <view class="movie-list">
+    <view class="movie-list-top cc">
       <view class="item">
+        <text class="index">1</text>
         <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
+        <view class="info">
+          <view class="title">水电费水电费</view>
+          <view class="comment">
+            <star prop-star="{{star}}"></star>
+            <text>2342354565人评价</text>
+          </view>
+        </view>
       </view>
       <view class="item">
+        <text class="index">1</text>
         <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
+        <view class="info">
+          <view class="title">水电费水电费</view>
+          <view class="comment">
+            <star prop-star="{{star}}"></star>
+            <text>2342354565人评价</text>
+          </view>
+        </view>
       </view>
       <view class="item">
+        <text class="index">1</text>
         <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
+        <view class="info">
+          <view class="title">水电费水电费</view>
+          <view class="comment">
+            <star prop-star="{{star}}"></star>
+            <text>2342354565人评价</text>
+          </view>
+        </view>
       </view>
       <view class="item">
+        <text class="index">1</text>
         <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
+        <view class="info">
+          <view class="title">水电费水电费</view>
+          <view class="comment">
+            <star prop-star="{{star}}"></star>
+            <text>2342354565人评价</text>
+          </view>
+        </view>
       </view>
     </view>
   </view>
