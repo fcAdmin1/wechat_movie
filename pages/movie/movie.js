@@ -14,15 +14,19 @@ Page({
     },
     params: {
       start: 0,
-      count: 10
+      count: 20
     },
     theaters: { // 热门预告
       list: [],
       total: 0,
     },
-    comingSoon: { // 
+    comingSoon: { // 即将上映
       list: [],
       total: 0,
+    },
+    filmTop: { // 电影TOP
+      list: [],
+      total: 0
     }
   },
 
@@ -37,6 +41,12 @@ Page({
   initData() {
     Api.filmTheaters(this.data.params).then((res) => {
       this.processDoubanData(res, 'theaters');
+    });
+    Api.filmComingSoon(this.data.params).then((res) => {
+      this.processDoubanData(res, 'comingSoon');
+    });
+    Api.filmTop(this.data.params).then((res) => {
+      this.processDoubanData(res, 'filmTop');
     });
   },
   processDoubanData(res, key) {

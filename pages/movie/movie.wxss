@@ -72,7 +72,7 @@
 }
 .movie-list-top .item .index{
   font-size: 30rpx;
-  width: 30rpx;
+  width: 40rpx;
 }
 .movie-list-top .item image {
   width: 52rpx;

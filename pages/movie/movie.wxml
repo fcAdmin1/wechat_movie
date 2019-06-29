@@ -2,10 +2,11 @@
   <view class="pannel">
     <view class="title cc">
       <view class="head">热门预告片</view>
-      <view class="more"><text>全部{{theaters.total}}</text> <image src="../../images/icon/right-arrow.png"></image> </view>
+      <view class="more"><text>全部{{theaters.total}}</text>
+      <image src="../../images/icon/right-arrow.png"></image></view>
     </view>
     <view class="movie-list">
-      <view class="item" wx:for="{{theaters.list}}" wx:key="movieId">
+      <view class="item" wx:for="{{theaters.list}}" wx:key="id">
         <image src="{{item.coverageUrl}}" mode="aspectFill"></image>
         <view class="title">{{item.title}}</view>
         <star prop-star="{{item.stars}}"></star>
@@ -14,103 +15,32 @@
   </view>
   <view class="pannel">
     <view class="title cc">
-      <view class="head">热门预告片</view>
-      <view class="more"><text>全部101</text> <image src="../../images/icon/right-arrow.png"></image> </view>
+      <view class="head">即将上映</view>
+      <view class="more"><text>全部{{comingSoon.total}}</text>
+      <image src="../../images/icon/right-arrow.png"></image></view>
     </view>
     <view class="movie-list">
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-        <star prop-star="{{star}}"></star>
-      </view>
-    </view>
-  </view>
-  <view class="pannel">
-    <view class="title cc">
-      <view class="head">热门预告片</view>
-      <view class="more"><text>全部101</text> <image src="../../images/icon/right-arrow.png"></image> </view>
-    </view>
-    <view class="movie-list">
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
-      </view>
-      <view class="item">
-        <image src="../../images/background/back.jpg"></image>
-        <view class="title">水电费水电费</view>
+      <view class="item" wx:for="{{comingSoon.list}}" wx:key="id">
+        <image src="{{item.coverageUrl}}" mode="aspectFill"></image>
+        <view class="title">{{item.title}}</view>
+        <star prop-star="{{item.stars}}"></star>
       </view>
     </view>
   </view>
   <view class="pannel">
     <view class="title cc">
       <view class="head">Top250</view>
-      <view class="more"><text>全部101</text> <image src="../../images/icon/right-arrow.png"></image> </view>
+      <view class="more"><text>全部{{filmTop.total}}</text> <image src="../../images/icon/right-arrow.png"></image> </view>
     </view>
     <view class="movie-list-top cc">
-      <view class="item">
-        <text class="index">1</text>
-        <image src="../../images/background/back.jpg"></image>
+      <view class="item" wx:for="{{filmTop.list}}">
+        <text class="index">{{index + 1}}</text>
+        <image src="{{item.coverageUrl}}" mode="aspectFill"></image>
         <view class="info">
-          <view class="title">水电费水电费</view>
+          <view class="title">{{item.title}}</view>
           <view class="comment">
-            <star prop-star="{{star}}"></star>
-            <text>2342354565人评价</text>
-          </view>
-        </view>
-      </view>
-      <view class="item">
-        <text class="index">1</text>
-        <image src="../../images/background/back.jpg"></image>
-        <view class="info">
-          <view class="title">水电费水电费</view>
-          <view class="comment">
-            <star prop-star="{{star}}"></star>
-            <text>2342354565人评价</text>
-          </view>
-        </view>
-      </view>
-      <view class="item">
-        <text class="index">1</text>
-        <image src="../../images/background/back.jpg"></image>
-        <view class="info">
-          <view class="title">水电费水电费</view>
-          <view class="comment">
-            <star prop-star="{{star}}"></star>
-            <text>2342354565人评价</text>
-          </view>
-        </view>
-      </view>
-      <view class="item">
-        <text class="index">1</text>
-        <image src="../../images/background/back.jpg"></image>
-        <view class="info">
-          <view class="title">水电费水电费</view>
-          <view class="comment">
-            <star prop-star="{{star}}"></star>
-            <text>2342354565人评价</text>
+            <star prop-star="{{item.stars}}"></star>
+            <text>{{item.commentCount}}人评价</text>
           </view>
         </view>
       </view>
