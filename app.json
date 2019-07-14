@@ -5,7 +5,8 @@
     "pages/welcome/index",
     "pages/logs/logs",
     "pages/flex/flex",
-    "pages/movie/movie"
+    "pages/movie/movie",
+    "pages/movieDetail/movieDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

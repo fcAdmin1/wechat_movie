@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -76,6 +76,13 @@
 					"name": "电影列表",
 					"pathName": "pages/movie/movie",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "电影评分详情",
+					"pathName": "pages/movieDetail/movieDetail",
+					"query": "id=34445992",
 					"scene": null
 				}
 			]
