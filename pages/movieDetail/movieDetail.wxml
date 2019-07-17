@@ -15,7 +15,9 @@
       <text class="title">豆瓣评分</text>
       <text class="score">{{movie.score}}</text>
       <view class="star">
-        <stars class="stars" stars="{{movie.stars}}" score="{{movie.average}}"></stars>
+        <star class="stars" prop-star="{{movie.star}}"></star>
+        <!-- {{movie.stars}} -->
+        <!-- <star class="stars" stars="{{movie.stars}}" score="{{movie.average}}"></star> -->
       </view>
       <text class="people-number">{{movie.reviewsCount}}人</text>
     </view>
@@ -27,9 +29,9 @@
   </view>
   <!-- <view class="hr"></view> -->
   <view class="cast cc">
-    <text class="cast-font"> 影人</text>
+    <text class="cast-font">影人</text>
     <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
-      <block wx:for="{{movie.casts}}">
+      <block wx:for="{{movie.casts}}" wx:key="item.id">
         <view class="cast-container">
           <image class="cast-img" mode="aspectFill" catchtap="viewImage" data-src="{{item.avatars.large}}" src="{{item.avatars.small}}"></image>
           <text class="cast-name">{{item.name}}</text>
@@ -40,10 +42,10 @@
   <view class="cast cc bottom">
     <text class="cast-font">剧照</text>
     <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
-      <view class="photo-container">
+      <!-- <view class="photo-container">
         <video class="video" src="{{movie.trailer}}"></video>
-      </view>
-      <block wx:for="{{movie.photos}}">
+      </view> -->
+      <block wx:for="{{movie.photos}}" wx:key="item.id">
         <view class="photo-container">
           <image class="photo-img" mode="aspectFill" src="{{item.image}}"catchtap="viewImage" data-src="{{item.cover}}"></image>
         </view>

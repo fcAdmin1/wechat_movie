@@ -19,6 +19,10 @@ Page({
         commentCount: res.comments_count,
         originalTitle: res.original_title,
         summary: res.summary, // 剧情简介
+        star: {
+          stars: util.convertToStarsArray(res.rating.stars),
+          // score: res.rating.average,
+        },
         stars: util.convertToStarsArray(res.rating.stars),
         score: res.rating.average,
         director: res.directors[0], // 导演

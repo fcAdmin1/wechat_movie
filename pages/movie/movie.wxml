@@ -2,11 +2,11 @@
   <view class="pannel">
     <view class="title cc">
       <view class="head">热门预告片</view>
-      <view class="more"><text>全部{{theaters.total}}</text>
+      <view class="more" data-cate="filmTheaters" catchtap="toMore"><text>全部{{theaters.total}}</text>
       <image src="../../images/icon/right-arrow.png"></image></view>
     </view>
     <view class="movie-list">
-      <view class="item" wx:for="{{theaters.list}}" wx:key="id">
+      <view class="item" wx:for="{{theaters.list}}" data-id="{{item.id}}" catchtap="toDetail" wx:key="id">
         <image src="{{item.coverageUrl}}" mode="aspectFill"></image>
         <view class="title">{{item.title}}</view>
         <star prop-star="{{item.stars}}"></star>
@@ -16,7 +16,7 @@
   <view class="pannel">
     <view class="title cc">
       <view class="head">即将上映</view>
-      <view class="more"><text>全部{{comingSoon.total}}</text>
+      <view class="more" data-cate="filmComingSoon" catchtap="toMore"><text>全部{{comingSoon.total}}</text>
       <image src="../../images/icon/right-arrow.png"></image></view>
     </view>
     <view class="movie-list">
@@ -30,7 +30,7 @@
   <view class="pannel">
     <view class="title cc">
       <view class="head">Top250</view>
-      <view class="more"><text>全部{{filmTop.total}}</text> <image src="../../images/icon/right-arrow.png"></image> </view>
+      <view class="more" data-cate="filmTop" catchtap="toMore"><text>全部{{filmTop.total}}</text> <image src="../../images/icon/right-arrow.png"></image> </view>
     </view>
     <view class="movie-list-top cc">
       <view class="item" wx:for="{{filmTop.list}}" wx:key="id">

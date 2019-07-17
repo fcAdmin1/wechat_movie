@@ -1,0 +1,10 @@
+<scroll-view class="grid-container" scroll-y="true" scroll-x="false" bindscrolltoupper="bindscrolltolower" bindscrolltolower="onScrollLower">
+  <view class="movie-list">
+    <view class="item" wx:for="{{movies}}" data-id="{{item.id}}" catchtap="toDetail" wx:key="item.id">
+      <image src="{{item.coverageUrl}}" mode="aspectFill"></image>
+      <view class="title">{{item.title}}</view>
+      <star prop-star="{{item.stars}}"></star>
+    </view>
+  </view>
+</scroll-view>
+

@@ -6,5 +6,5 @@
       <image class="img" wx:else src="/images/icon/star_gray.png"></image>
     </block>
   </view>
-  <text class="star-score">{{propStar.score}}</text>
+  <text class="star-score" wx:if="{{propStar.score}}">{{propStar.score}}</text>
 </view>

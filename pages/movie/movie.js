@@ -57,7 +57,7 @@ Page({
         id: item.id,
         stars: {
           stars: util.convertToStarsArray(item.rating.stars),
-          score: item.rating.average,
+          score: item.rating.average + '',
         },
         commentCount: item.collect_count,
       }
@@ -69,6 +69,21 @@ Page({
     this.setData({
       [key]: obj
     });
+  },
+  // 跳转详情页
+  toDetail(e) {
+    const { id } = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: "/pages/movieDetail/movieDetail?id=" + id
+    })
+  },
+  toMore(e) {
+    
+    const { cate } = e.currentTarget.dataset;
+    console.log(cate)
+    wx.navigateTo({
+      url: "/pages/movieMore/movieMore?category=" + cate
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

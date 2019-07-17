@@ -198,6 +198,7 @@ page {
 .people-number {
   color: #A7A7A7;
   font-size: 20rpx;
+  margin-top: 20rpx;
 }
 
 .movie-info .info text{
