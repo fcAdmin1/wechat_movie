@@ -1,6 +1,6 @@
-import api from '../../utils/api.js';
+import Api from '../../utils/api.js';
 import util from '../../utils/util.js';
-const Api = new api();
+
 
 Page({
   data: {
@@ -40,7 +40,8 @@ Page({
         title: res.title
       })
       console.log(res);
-    })
+    });
+    
   },
   viewImage(e) {
     var src = e.currentTarget.dataset.src;
@@ -49,4 +50,12 @@ Page({
       urls: [src] // 需要预览的图片http链接列表
     })
   },
+  onShareAppMessage(res) {
+    console.log(res);
+    return {
+      title: '自定义转发标题',
+      path: '/pages/movieDetail/movieDetail',
+      imageUrl: this.data.movie.movieImg
+    }
+  }
 })

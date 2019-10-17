@@ -7,7 +7,14 @@
     "pages/flex/flex",
     "pages/movie/movie",
     "pages/movieDetail/movieDetail",
-    "pages/movieMore/movieMore"
+    "pages/movieMore/movieMore",
+    "pages/author/author",
+    "pages/component/component",
+    "pages/addMovie/index",
+    "pages/cloud/index",
+    "pages/me/index",
+    "pages/adminList/index",
+    "pages/form/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,6 +39,12 @@
         "text": "电影",
         "iconPath": "images/tab/film_icon.png",
         "selectedIconPath": "images/tab/film_icon_selected.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "images/tab/me_icon.png",
+        "selectedIconPath": "images/tab/me_icon_selected.png"
       }
     ]
   },

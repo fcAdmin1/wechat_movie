@@ -1,5 +1,12 @@
 import { news } from '../../dbBase/new.js';
 
+wx.cloud.init({
+  env: 'test-dwpnd'
+})
+const db = wx.cloud.database({
+  env: 'test-dwpnd',
+  // traceUser: true,
+});
 
 Page({
   data: {
@@ -18,6 +25,7 @@ Page({
       '/images/banner/banner.png'
     ],
     articleList: [], // 文章列表
+    list: [],
     test: {
       name: 'james',
       info: {
@@ -32,12 +40,33 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      articleList: news
-    })
-    console.log('生命周期函数--监听页面加载');
-  },
+    // this.setData({
+    //   articleList: news
+    // })
+    this.getData();
 
+  },
+  getData(){
+    // db.collection('article').count();
+    db.collection('article').where({}).get().then(res => {
+      console.log(res.data[0]._id)
+      db.collection('users').doc('26b301645d4fbb4a114ae60202109c67').get().then(rs => {
+        console.log(res)
+        this.setData({
+          list: res.data.map(item => {
+            return {
+              ...item,
+              user: rs.data,
+            }
+          })
+        })
+      })
+    });
+    // this.setData({
+    //   list: res.data,
+    // });
+    return {}
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

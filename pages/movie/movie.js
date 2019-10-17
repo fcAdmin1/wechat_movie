@@ -1,6 +1,6 @@
-import api from '../../utils/api.js';
+import Api from '../../utils/api.js';
 import util from '../../utils/util.js';
-const Api = new api();
+// const Api = new api();
 
 Page({
 

@@ -52,4 +52,5 @@
       </block>
     </scroll-view>
   </view>
+  <button open-type="share">分享</button>
 </view>

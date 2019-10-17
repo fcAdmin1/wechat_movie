@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="head">
+    <view class="avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="motto">
+      <open-data class="motto" type="userNickName" lang="zh_CN"></open-data>
+    </view>
+  </view>
+  <view class="list">
+    <view class="item" catchtap="toAdminList" wx:if="isAdmin">
+      <view class="cc">
+        <text>数据管理</text>
+        <image src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

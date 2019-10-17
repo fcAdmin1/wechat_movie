@@ -1,0 +1,10 @@
+<view class="container cc">
+  <text>电影名</text>
+  <input placeholder="输入电影名称" value="{{formData.name}}" bindblur="bindMovieName" auto-focus/>
+  <text>图片</text>
+  <image wx:if="{{img}}" mode="aspectFill" src="{{img}}"></image>
+  <button class="up-img" wx:else catchtap="upFile">上传图片</button>
+  <text>电影描述</text>
+  <textarea value="{{formData.content}}" bindblur="bindTextAreaBlur" placeholder="这个新闻热点" />
+  <button class="submit" catchtap="submit">提交</button>
+</view>

@@ -1,10 +1,7 @@
 import util from '../../utils/util.js';
-import api from '../../utils/api.js';
-
-const Api = new api();
+import Api from '../../utils/api.js';
 
 Page({
-
   /**
    * 页面的初始数据
    */

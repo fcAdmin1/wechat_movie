@@ -1,0 +1,26 @@
+.list {
+  padding-top: 20rpx;
+}
+.list .item {
+  background: white;
+  height: 48px;
+  border-bottom: 2rpx solid #DBDBDB;
+}
+.list .item image {
+  width: 15rpx;
+  height: 28rpx;
+}
+.list .item .cc {
+  height: 100%;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+}
+.list .item .cc text{
+  font-size: 28rpx;
+}
+
+.container {
+  min-height: 100vh;
+  background: #EDEDED;
+}

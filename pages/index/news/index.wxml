@@ -1,12 +1,12 @@
 <view class="container">
   <text class="date">{{news.dateTime}}</text>
-  <text class="title">{{news.title}}</text>
+  <text class="title">{{news.name}}</text>
   <view class="author-date">
     <view class="user-info">
-      <image class="avatar" src="{{news.avatar}}"></image>
+      <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
       <view class="text">
-        <text class="author">{{news.author}}</text>
-        <text class="desc">{{news.userInfo}}</text>
+        <text class="author">{{userInfo.nickName}}</text>
+        <text class="desc">{{userInfo.city}}</text>
       </view>
     </view>
     <view class="control">
@@ -17,6 +17,6 @@
       </button>
     </view>
   </view>
-  <video class="video" src="{{news.videoSource}}"></video>
-  <text class="detail">{{news.detail}}</text>
+  <image class="video" mode="aspectFill" src="{{news.img_src}}"></image>
+  <text class="detail">{{news.content}}</text>
 </view>

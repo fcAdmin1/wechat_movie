@@ -14,7 +14,7 @@
       </swiper-item>
     </block>
   </swiper>
-  <view class="list">
+  <!-- <view class="list">
     <view class="item" wx:for="{{articleList}}" wx:key="id" data-id="{{item.id}}" bindtap="toDetail">
       <view class="title cc">
         <text class="title-text">{{item.title}}</text>
@@ -40,5 +40,33 @@
         {{item.content}}
       </view>
     </view>
+  </view> -->
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="id" data-id="{{item._id}}" bindtap="toDetail">
+      <view class="title cc">
+        <text class="title-text">{{item.name}}</text>
+        <view class="article-info">
+          <view class="author">
+            <image class="avatar" src="{{item.user.avatarUrl}}"></image>
+            <text>{{item.user.nickName}}</text>
+          </view>
+          <view class="views">
+            <view>
+              <image src="/images/icon/view.png"></image>
+              <text>{{item.reading}}</text>
+            </view>
+            <view>
+              <image src="/images/icon/star.png"></image>
+              <text>{{item.collection}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <image class="ads" mode="aspectFill" src="{{item.img_src}}"></image>
+      <view class="cc content">
+        {{item.content}}
+      </view>
+    </view>
   </view>
 </view>
+<!-- {{list}} -->

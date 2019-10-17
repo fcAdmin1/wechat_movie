@@ -18,4 +18,4 @@ class Api extends ajax {
   }
 }
 
-export default Api;
+export default new Api();

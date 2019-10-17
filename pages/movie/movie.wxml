@@ -2,7 +2,8 @@
   <view class="pannel">
     <view class="title cc">
       <view class="head">热门预告片</view>
-      <view class="more" data-cate="filmTheaters" catchtap="toMore"><text>全部{{theaters.total}}</text>
+      <view class="more" data-cate="filmTheaters" catchtap="toMore">
+      <text>全部{{theaters.total}}</text>
       <image src="../../images/icon/right-arrow.png"></image></view>
     </view>
     <view class="movie-list">

@@ -1,4 +1,12 @@
 import { news } from '../../../dbBase/new.js';
+wx.cloud.init({
+  env: 'test-dwpnd'
+})
+const db = wx.cloud.database({
+  env: 'test-dwpnd',
+  // traceUser: true,
+});
+const _ = db.command
 
 Page({
 
@@ -17,6 +25,7 @@ Page({
       videoSource: '',
       detail: '',
     },
+    userInfo: {}, // 编辑信息
     colletionIndex: 0,
   },
 
@@ -24,14 +33,48 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    const newsItem = news.find(item => item.id == options.id);
-    wx.setNavigationBarTitle({
-      title: newsItem.title,
+    console.log(options)
+    this.getArticle(options.id);
+    this.getUser();
+    this.upDateView(options.id);
+  },
+  getArticle(id) {
+    db.collection('article').doc(id).get().then(res => {
+      this.setData({
+        news: res.data,
+      })
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
     })
-    this.setData({
-      news: newsItem,
+  },
+  getUser() {
+    wx.cloud.callFunction({
+      // 云函数名称
+      name: 'getUser',
+      // 传给云函数的参数
+      data: {
+        // user_info: e.detail.userInfo,
+      },
+      success: (res) => {
+        this.setData({
+          userInfo: res.result.user,
+        })
+        console.log(res, ']]]]]]') // 3
+      },
+      fail: console.error
     })
-    this.initColletion();
+  },
+  upDateView(id) {
+    db.collection('article').doc(id).update({
+      data: {
+        reading: _.inc(1),
+      }
+    }).then(res => {
+      console.log(res, 'updata')
+    }).catch(err => {
+      console.log(err)
+    })
   },
   initColletion() {
     const colletionList = wx.getStorageSync('colletionList');

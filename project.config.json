@@ -20,16 +20,18 @@
 			"outputPath": ""
 		}
 	},
+	"cloudfunctionRoot": "functions/",
 	"compileType": "miniprogram",
-	"libVersion": "2.7.4",
+	"libVersion": "2.8.0",
 	"appid": "wx48305e02da3ba896",
-	"projectname": "fc_movie_information",
+	"projectname": "fc_movie_information_code",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -48,7 +50,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -90,6 +92,54 @@
 					"name": "更多电影",
 					"pathName": "pages/movieMore/movieMore",
 					"query": "category=filmTheaters",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/author/author",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/welcome/index",
+					"pathName": "pages/welcome/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "组件测试",
+					"pathName": "pages/component/component",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cloud",
+					"pathName": "pages/cloud/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加电影",
+					"pathName": "pages/addMovie/index",
+					"query": "category=filmTheaters",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "form表单",
+					"pathName": "pages/form/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/me/index",
 					"scene": null
 				}
 			]

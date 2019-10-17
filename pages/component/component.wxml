@@ -1,0 +1,22 @@
+<!--pages/component/component.wxml-->
+<text>pages/component/component.wxml</text>
+<view>
+
+<components-com-star prop-a="{{num}}" bind:click_btn="clickBtn">
+  <view class="slot" slot="slot1">这是一个slot1</view>
+  <view class="slot" slot="slot2">这是一个slot2</view>
+</components-com-star>
+</view>
+
+
+<!-- 事件 -->
+
+<view id="outer" bindtap="handleTap1">
+  outer view
+  <view id="middle" bindtap="handleTap2">
+    middle view
+    <view id="inner" bindtap="handleTap3">
+      inner view
+    </view>
+  </view>
+</view>

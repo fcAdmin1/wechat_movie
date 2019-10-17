@@ -1,0 +1,8 @@
+<view class="wrapper">
+  <view>这里是组件内部节点</view>
+  {{propA}}
+  {{b}}
+  <slot name="slot1"></slot>
+  <slot name="slot2"></slot>
+  <view bindtap="click">click</view>
+</view>

@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="list">
+    <view class="item">
+      <view class="cc">
+        <text>用户管理</text>
+        <image src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class="item">
+      <view class="cc">
+        <text>文章管理</text>
+        <image src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class="item">
+      <view class="cc">
+        <text>日志管理</text>
+        <image src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

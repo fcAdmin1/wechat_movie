@@ -24,7 +24,7 @@ function convertToStarsArray(stars) {
   return array;
 }
 
-export default{
+export default {
   formatTime,
   convertToStarsArray
 }

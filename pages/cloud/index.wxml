@@ -1,0 +1,8 @@
+<!--pages/cloud/index.wxml-->
+<text>pages/cloud/index.wxml</text>
+
+
+<view>
+
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+</view>

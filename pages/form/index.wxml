@@ -1,0 +1,16 @@
+<view>
+
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+<radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+
+<input class="input" bindinput="bindInput" placeholder="这是一个可以自动聚焦的input" auto-focus/>
+<button type="success" catchtap="submit">提交</button>
+</view>
